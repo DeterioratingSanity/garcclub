@@ -35,3 +35,16 @@ function proximitySwitchLeft(e){
     closeNavLeft();
   }
 }
+
+//function open(this){
+//  var expandedImage = document.getElementById("expandedImage");
+//  expandedImage.src = this.src;
+//  expandImg.parentElement.style.display = "block";
+//}
+function fullSz(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
