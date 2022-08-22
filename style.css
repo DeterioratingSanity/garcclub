@@ -61,7 +61,7 @@ body::-webkit-scrollbar {
 
 /* primary */
 
-#body{
+.body{
   width: 70%;
   margin: auto;
   transition: 0.7s;
@@ -124,47 +124,56 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 }
-/**ding ding ding ding ding**/
 
-
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8;
-  cursor: pointer;
+.mark{
+  width:45%;
+  margin: auto;
 }
-
-.column img:hover {
-  opacity: 1;
+.section{
+  width:40%;
+  margin: auto;
 }
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+span.section{
+  border-bottom: 1px solid black;
 }
-
-/* The expanding image container */
-.container {
-  position: relative;
-  display: none;
+ul{
+  line-height:30px;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
 }
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
+#planeName{
+  text-align:center;
 }
-
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
+#inputText{
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+.airList{
+  width:40%;
+}
+.bioSet{
+  border-bottom: 1px solid black;
+  padding-bottom: 1%;
+  width:70%;
+  margin:auto;
+}
+.bioPic{
+  border: 6px ridge grey;
+  margin-right: 2%;
+  float: left;
+}
+.minutes{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
 }
