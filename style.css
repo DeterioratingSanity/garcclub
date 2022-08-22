@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 /*body{
  color:#473B38;
@@ -20,6 +21,7 @@ body::-webkit-scrollbar {
   overflow:hidden;
   padding-top: 60px;
   transition: 0.5s;
+  white-space:nowrap;
 }
 .sideNavLeft a {
   padding: 8px 8px 8px 32px;
@@ -176,4 +178,18 @@ ul{
     list-style-type: none;
     text-align: left;
     padding: 0;
+}
+.messageForm{
+  width: 65%;
+  margin: auto;
+  transition: 0.7s;
+  font-family: sans-serif;
+  padding:10px;
+  margin:1px;
+}
+form{
+  text-align:center;
+}
+textarea{
+  resize:none;
 }
