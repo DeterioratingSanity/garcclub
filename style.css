@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
 }
 #content {
   margin: auto;
-  width: 75%;
+  width: 76.2%;
   padding: 10px;
   border-left: 2px solid #e3e3e3;
   border-right: 2px solid #e3e3e3;
@@ -185,11 +185,15 @@ ul{
   transition: 0.7s;
   font-family: sans-serif;
   padding:10px;
-  margin:1px;
+  margin:2px;
 }
 form{
   text-align:center;
 }
 textarea{
   resize:none;
+}
+button{
+  background-color:white;
+  border: 1px solid grey;
 }
