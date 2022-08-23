@@ -18,6 +18,33 @@
   <script
      src="script.js">
   </script>
+
+  <link href="lib/main.css" rel="stylesheet">
+  <script src="lib/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+       var calendarEl = document.getElementById('calendar');
+       var calendar = new FullCalendar.Calendar(calendarEl, {
+
+         events: [
+    { // this object will be "parsed" into an Event Object
+      title: 'RC Club', // a property!
+      daysOfWeek: [5],
+      startRecur: '2022-08-26',
+      endRecur:'2022-12-17'
+    },
+    {
+      title: 'RC 2ub',
+      daysOfWeek: [5],
+      startRecur: '2023-01-06',
+      endRecur: '2023-05-26'
+    }
+  ]
+       });
+       calendar.render();
+     });
+
+  </script>
 </head>
 
 <body>
@@ -41,13 +68,14 @@
         <br>
         Highlight models, random doos and dahs, logoish things
         <br>
-        Do <del>meetings</del>, calendar(bleh), and <del>contact/membership deets</del>
+        Do <del>meetings</del>, <del>calendar(bleh)</del>, and <del>contact/membership deets</del>
         <br><br>
-        Need to implement a javascript based calendar to sit in the homepage. Then will be a reasonable template.
-        <br>
-        <div id="calendarContainer"></div>
-        <div id="organizerContainer"></div>
-        <br>
+        Mild ruin inflicted upon myself, but have endured to integrate a nice little calendar...
+        <br><br>
+        <hr style="width:55%">
+<div id="calendar" style="width:50%; margin:auto;"></div><hr style="width:55%"><br>
+        <p class="body">
+
         Maecenas pharetra convallis posuere morbi leo. Cursus mattis molestie a iaculis at erat pellentesque. Ornare massa eget egestas purus viverra accumsan
         in. Platea dictumst quisque sagittis purus. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Eget gravida cum sociis natoque penatibus et
         magnis dis. Erat imperdiet sed euismod nisi porta lorem mollis. Amet nulla facilisi morbi tempus iaculis urna. Aenean sed adipiscing diam donec
