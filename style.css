@@ -197,3 +197,9 @@ button{
   background-color:white;
   border: 1px solid grey;
 }
+.homeward{
+  position:absolute;
+  bottom:5%;
+  left:0;
+  width:70%;
+}
