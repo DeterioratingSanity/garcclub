@@ -107,12 +107,8 @@ body::-webkit-scrollbar {
 
 /* Content */
 .content {
-  margin: auto;
- width: 75%;
- padding: 10px;
- border-left: 1px solid #473B38;
- border-right: 1px solid #473B38;
- z-index:4;
+  background-color: white;
+  padding: 10px;
 }
 
 .column {
