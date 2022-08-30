@@ -36,6 +36,36 @@ function proximitySwitchLeft(e){
   }
 }
 
+document.addEventListener('scroll',headerSwitch);
+function headerSwitch() {
+  if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    document.getElementById("title").style.height = "150px";
+    document.getElementById("title").style.width = "150px";
+    document.getElementById("title").style.marginTop = "-20px";
+    document.getElementById("bodyFirst").style.marginTop = "200px";
+    document.getElementById("borderOne").style.top = "30px";
+    document.getElementById("borderTwo").style.top = "105px";
+    document.getElementById("titleBox").style.boxShadow = "0 1px black";
+  } else {
+    document.getElementById("title").style.height = "500px";
+    document.getElementById("title").style.width = "400px";
+    document.getElementById("title").style.marginTop = "-30px";
+    document.getElementById("bodyFirst").style.marginTop = "520px";
+    document.getElementById("borderOne").style.top = "100px";
+    document.getElementById("borderTwo").style.top = "365px";
+    document.getElementById("titleBox").style.boxShadow = "0 0 black";
+  }
+}
+window.onscroll = function() {scrollBar()};
+
+function scrollBar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("bar").style.width = scrolled + "%";
+}
+
+
 //function open(this){
 //  var expandedImage = document.getElementById("expandedImage");
 //  expandedImage.src = this.src;
