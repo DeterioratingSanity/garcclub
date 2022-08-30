@@ -22,6 +22,7 @@ body::-webkit-scrollbar {
   padding-top: 60px;
   transition: 0.5s;
   white-space:nowrap;
+  box-shadow: 3px 0 red;
 }
 .sideNavLeft a {
   padding: 8px 8px 8px 32px;
@@ -46,7 +47,7 @@ body::-webkit-scrollbar {
 }
 #icon {
   font-size: 50px;
-  color: rgb(0,0,0);
+  color: rgb(255,255,255);
   user-select: none;
   position:sticky;
   top: 20px;
@@ -234,7 +235,7 @@ button{
   height: 500px;
   width:400px;
   z-index:10;
-  background-color:grey;
+  background-color:black;
 }
 #titleBox {
   position: fixed;
@@ -243,14 +244,14 @@ button{
   z-index:3;
   padding-top:20px;
   width: 100%;
-  background-color:grey;
+  background-color:black;
   position:fixed;
   left: 50%;
   text-align:center;
   transform: translateX(-50%);
   justify-content: center;
 
-  box-shadow: 0 0 black;
+  box-shadow: 0 0 red;
 }
 #holder{
   position:sticky;
@@ -264,9 +265,9 @@ button{
   margin-left: 10%;
   transition: 0.5s;
   z-index:1;
-  color:black;
-  background-color:black;
-  height:1px;
+  color:white;
+  background-color:white;
+  height:2px;
   border-width:0;
 }
 #borderTwo {
@@ -276,8 +277,16 @@ button{
   margin-left: 10%;
   transition: 0.5s;
   z-index:1;
-  color:black;
-  background-color:black;
-  height:1px;
+  color:white;
+  background-color:white;
+  height:2px;
   border-width:0;
+}
+button:hover{
+  background-color:rgb(220,220,220);
+}
+button:active{
+  background-color:red;
+  color:white;
+  font-weight:bold;
 }

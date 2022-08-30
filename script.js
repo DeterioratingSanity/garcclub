@@ -45,7 +45,7 @@ function headerSwitch() {
     document.getElementById("bodyFirst").style.marginTop = "200px";
     document.getElementById("borderOne").style.top = "30px";
     document.getElementById("borderTwo").style.top = "105px";
-    document.getElementById("titleBox").style.boxShadow = "0 1px black";
+    document.getElementById("titleBox").style.boxShadow = "0 5px red";
   } else {
     document.getElementById("title").style.height = "500px";
     document.getElementById("title").style.width = "400px";
@@ -53,7 +53,7 @@ function headerSwitch() {
     document.getElementById("bodyFirst").style.marginTop = "520px";
     document.getElementById("borderOne").style.top = "100px";
     document.getElementById("borderTwo").style.top = "365px";
-    document.getElementById("titleBox").style.boxShadow = "0 0 black";
+    document.getElementById("titleBox").style.boxShadow = "0 0 red";
   }
 }
 window.onscroll = function() {scrollBar()};
