@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: rgb(230,230,230);
+  color: rgb(220,220,220);
   display: block;
   transition: 0.3s;
 }
@@ -289,4 +289,27 @@ button:active{
   background-color:red;
   color:white;
   font-weight:bold;
+}
+#return{
+  text-align:center;
+}
+#returnButton{
+  background-color:black;
+  padding:10px;
+  border-radius:10px;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+  transition:.5s;
+  font-weight:bold;
+}
+#returnButton:hover{
+  border:3px solid red;
+  font-weight:bold;
+  transition:.5s;
+}
+#returnButton:active{
+  background-color:red;
+  font-weight:bold;
+  transition:.5s;
 }
