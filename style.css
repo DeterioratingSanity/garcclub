@@ -85,6 +85,8 @@ body::-webkit-scrollbar {
 }
 .row {
   margin: 8px -16px;
+  width:75%;
+  margin:auto;
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -114,19 +116,12 @@ body::-webkit-scrollbar {
 
 .column {
   float: left;
-  width: 25%;
+  width: 50%;
   padding: 10px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .column {
     width: 100%;
   }
@@ -175,7 +170,7 @@ ul{
   margin:auto;
 }
 .bioPic{
-  border: 6px ridge grey;
+  border: 6px ridge red;
   margin-right: 2%;
   float: left;
 }
@@ -206,7 +201,7 @@ button{
   position:absolute;
   bottom:5%;
   left:0;
-  width:70%;
+  width:95%;
 }
 
 .frame {
