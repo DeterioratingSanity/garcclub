@@ -172,6 +172,7 @@ ul{
 .bioPic{
   border: 6px ridge red;
   margin-right: 2%;
+  height:550px;
   float: left;
 }
 .minutes{
