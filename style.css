@@ -121,11 +121,7 @@ body::-webkit-scrollbar {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 100%;
-  }
-}
+
 
 .mark{
   width:45%;
@@ -172,8 +168,27 @@ ul{
 .bioPic{
   border: 6px ridge red;
   margin-right: 2%;
-  height:550px;
+  height:35em;
   float: left;
+}
+@media screen and (max-width: 1500px) {
+  .bioPic{
+    height:20em;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .bioPic{
+    height:15em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+  }
+  .bioPic{
+    height:25em;
+  }
 }
 .minutes{
     list-style-type: none;
