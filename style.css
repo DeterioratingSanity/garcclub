@@ -169,6 +169,7 @@ ul{
   border: 6px ridge red;
   margin-right: 2%;
   aspect-ratio: 1/1.3;
+    /*not perfect but uses one line instead of 30 and works better than that*/
   float: left;
 }
 @media screen and (max-width: 900px) {
