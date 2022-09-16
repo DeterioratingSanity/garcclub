@@ -100,7 +100,9 @@ body::-webkit-scrollbar {
   float: left;
   width: 25%;
 }
-
+.planeDet{
+  width:100%; object-fit:cover; aspect-ratio:1/1;;
+}
 /* Clear floats after rows */
 .row:after {
   content: "";
@@ -109,9 +111,10 @@ body::-webkit-scrollbar {
 }
 
 /* Content */
-.content {
+.content {  
+  display:grid;
   background-color: white;
-  padding: 10px;
+
 }
 
 .column {
@@ -317,10 +320,18 @@ button:active{
     transition: border 0;
 }
 .planePic{
+  aspect-ratio: 1/1;
+  object-fit: cover;
   border: 6px ridge red;
   margin-right: 2%;
     /*not perfect but uses one line instead of 30 and works better than that*/
   float: left;
+    box-shadow: 0 0 10px transparent;
+    transition: 0.5s;
+    margin-bottom: 5px;
+}
+.planePic:hover{
+  box-shadow: 0 0 10px black;
 }
 
 .buttonHolder{
