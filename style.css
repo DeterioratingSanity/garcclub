@@ -111,7 +111,7 @@ body::-webkit-scrollbar {
 }
 
 /* Content */
-.content {  
+.content {
   display:grid;
   background-color: white;
 
